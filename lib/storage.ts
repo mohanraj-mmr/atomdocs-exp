@@ -79,7 +79,27 @@ export function updateCategoryOrder(categories: Category[]): void {
   saveStorageData(data);
 }
 
-export function updatePageOrder(pages: Page[]): void {
+export function updateCategoryOrder(categories: Category[]): Promise<void> {
+  try {
+    const data = getStorageData();
+    data.categories = categories;
+    saveStorageData(data);
+    return Promise.resolve();
+  } catch (error) {
+    return Promise.reject(error);
+  }
+}
+
+export function updatePageOrder(pages: Page[]): Promise<void> {
+  try {
+    const data = getStorageData();
+    data.pages = pages;
+    saveStorageData(data);
+    return Promise.resolve();
+  } catch (error) {
+    return Promise.reject(error);
+  }
+}
   const data = getStorageData();
   data.pages = pages;
   saveStorageData(data);
