@@ -62,8 +62,6 @@ export function saveCategory(category: Category): void {
   saveStorageData(data);
 }
 
-export function deleteCategory(categoryId: string): void {
-}
 export function deleteCategory(categoryId: string): Promise<void> {
   try {
     const data = getStorageData();
