@@ -63,9 +63,15 @@ export function saveCategory(category: Category): void {
 }
 
 export function deleteCategory(categoryId: string): void {
-  const data = getStorageData();
-  data.categories = data.categories.filter(c => c.id !== categoryId);
-  saveStorageData(data);
+export function deleteCategory(categoryId: string): Promise<void> {
+  try {
+    const data = getStorageData();
+    data.categories = data.categories.filter(c => c.id !== categoryId);
+    saveStorageData(data);
+    return Promise.resolve();
+  } catch (error) {
+    return Promise.reject(error);
+  }
 }
 
 export function updateCategoryOrder(categories: Category[]): void {
