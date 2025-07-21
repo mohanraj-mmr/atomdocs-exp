@@ -1,4 +1,5 @@
 import { AppState, Page, Category } from '@/types';
+import { saveStorageData } from './storage';
 
 export const exportData = (data: AppState): void => {
   const dataStr = JSON.stringify(data, null, 2);

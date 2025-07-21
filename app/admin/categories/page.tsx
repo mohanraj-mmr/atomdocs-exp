@@ -183,7 +183,7 @@ export default function CategoriesPage() {
         }));
         
         data.categories = [...data.categories, ...categoriesWithOrder];
-        return updateCategoryOrder(data.categories);
+        return saveStorageData(data);
       })
       .then(() => {
         return fetchData();

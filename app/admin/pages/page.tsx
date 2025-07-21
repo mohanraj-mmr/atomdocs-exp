@@ -211,7 +211,7 @@ export default function ManagePagesPage() {
         }));
         
         data.pages = [...data.pages, ...newPages];
-        return updatePageOrder(data.pages);
+        return saveStorageData(data);
       })
       .then(() => {
         return fetchData();
