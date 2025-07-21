@@ -31,7 +31,7 @@ import { DraggablePageItem } from '@/components/draggable-page-item';
 import Link from 'next/link';
 import { Page, Category } from '@/types';
 import { fetchData } from '@/lib/api';
-import { deletePage, updatePageOrder } from '@/lib/client-storage';
+import { deletePage, updatePageOrder, saveStorageData } from '@/lib/client-storage';
 import { exportPages, importData } from '@/lib/import-export';
 import { useRef } from 'react';
 import { toast } from 'sonner';

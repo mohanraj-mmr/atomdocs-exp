@@ -29,7 +29,7 @@ import { DraggableCategoryItem } from '@/components/draggable-category-item';
 import Link from 'next/link';
 import { Category } from '@/types';
 import { fetchData } from '@/lib/api';
-import { deleteCategory, updateCategoryOrder } from '@/lib/client-storage';
+import { deleteCategory, updateCategoryOrder, saveStorageData } from '@/lib/client-storage';
 import { exportCategories, importData } from '@/lib/import-export';
 import { useRef } from 'react';
 import { toast } from 'sonner';
