@@ -73,12 +73,6 @@ export function deleteCategory(categoryId: string): Promise<void> {
   }
 }
 
-export function updateCategoryOrder(categories: Category[]): void {
-  const data = getStorageData();
-  data.categories = categories;
-  saveStorageData(data);
-}
-
 export function updateCategoryOrder(categories: Category[]): Promise<void> {
   try {
     const data = getStorageData();
