@@ -1,0 +1,50 @@
+{
+  "pages": [
+    {
+      "id": "1753007048271",
+      "title": "newpage",
+      "slug": "newpage",
+      "description": "newpage",
+      "category": "students",
+      "tags": [],
+      "icon": "Layers",
+      "iconColor": "#8b5cf6",
+      "content": "<p>Start writing your content here...</p>",
+      "order": 0,
+      "createdAt": "2025-07-20T10:24:08.271Z",
+      "updatedAt": "2025-07-21T05:46:44.953Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1753005326214",
+      "name": "Courses",
+      "slug": "courses",
+      "description": "",
+      "icon": "BookOpen",
+      "iconColor": "",
+      "order": 0,
+      "createdAt": "2025-07-20T09:55:26.214Z"
+    },
+    {
+      "id": "1753005358102",
+      "name": "Students",
+      "slug": "students",
+      "description": "",
+      "icon": "Users",
+      "iconColor": "",
+      "order": 0,
+      "createdAt": "2025-07-20T09:55:58.102Z"
+    },
+    {
+      "id": "1753075859040",
+      "name": "Questions",
+      "slug": "questions",
+      "description": "",
+      "icon": "Terminal",
+      "iconColor": "",
+      "order": 0,
+      "createdAt": "2025-07-21T05:30:59.040Z"
+    }
+  ]
+}
