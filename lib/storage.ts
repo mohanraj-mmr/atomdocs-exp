@@ -63,6 +63,7 @@ export function saveCategory(category: Category): void {
 }
 
 export function deleteCategory(categoryId: string): void {
+}
 export function deleteCategory(categoryId: string): Promise<void> {
   try {
     const data = getStorageData();
