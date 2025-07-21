@@ -100,6 +100,8 @@ export function updatePageOrder(pages: Page[]): Promise<void> {
     return Promise.reject(error);
   }
 }
+
+export function updatePageOrderSync(pages: Page[]): void {
   const data = getStorageData();
   data.pages = pages;
   saveStorageData(data);
